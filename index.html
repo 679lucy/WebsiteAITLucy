@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>first website</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="Screenshot 2024-04-25 114109.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />  
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="menu.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <button class="nav-button" type="button">
+            <i class="fa-solid fa-bars"></i>
+
+        </button>    
+        <img class="logo" src="Screenshot 2024-04-25 114109.png"
+        <form id="search-form">
+            <input type="text" name="search-keywords" id="search">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </button>
+        </form>    
+        <nav class="navigation">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+            <a href="menu.html">Menu</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+    <!-- <div class="banner">
+        <h1>Welcome!</h1>
+    </div> -->
+    <div class="front-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay" :5000 }'>
+        <div class="cell">Welcome</div>
+        <div class="cell">Two</div>
+        <div class="cell">Three</div>
+        <div class="cell">Four</div>
+        <div class="cell">Five</div>
+    </div>
+    <main class="content">
+        <h2>Our Menu</h2>
+        <p>
+            The bright morning sun illuminated the clear blue sky, casting a warm glow on the vibrant green leaves of
+            the trees. Birds chirped merrily, a gentle breeze rustled the colorful flowers, and the air was filled with
+            the sweet smell of blooming blossoms. The sky was dotted with fluffy white clouds, drifting lazily across
+            the vast expanse. People walked with a spring in their step, enjoying the perfect weather that seemed to
+            fill the world with an air of joy and contentment.
+        </p>
+        <div class="card-grid">
+            <div class="card">
+                <img src="products/cloris-ying-rmdo8r9iGfw-unsplash (1).jpg" class="card-image">
+                <h3>Steamed Mussels</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id fugiat ullam commodi
+                    voluptatum ea ex aperiam nulla sapiente consequatur adipisci at aspernatur, facilis pariatur illo
+                    temporibus itaque in expedita.
+                </p>
+                <button type="button" class="card-button">Order</button>
+            </div>
+            <div class="card">
+                <img src="products/jane-X95HPY1uKsg-unsplash.jpg" class="card-image">
+                <h3>Garlic Prawns</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id fugiat ullam commodi
+                    voluptatum ea ex aperiam nulla sapiente consequatur adipisci at aspernatur, facilis pariatur illo
+                    temporibus itaque in expedita.
+                </p>
+                <button type="button" class="card-button">Order</button>
+            </div>
+            <div class="card">
+                <img src="products/meritt-thomas--A_U5GZlLlQ-unsplash.jpg" class="card-image">
+                <h3>Lobsters</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias non nobis, sunt
+                    similique qui veniam quod eum atque, tempore libero accusantium architecto voluptates aperiam
+                    debitis ut mollitia, praesentium vitae!
+                </p>
+                <button type="button" class="card-button">Order</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Lusiana 2024</p>
+    </footer>
+</body>
+
+</html>          
