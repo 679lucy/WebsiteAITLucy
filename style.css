@@ -1,0 +1,231 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --jet: rgb(0, 0, 0);
+    --rose-pompadour: rgb(253, 253, 253);
+    --dodger-blue: hsla(205, 94%, 52%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --vanilla: rgb(255, 255, 255);
+}
+
+body {
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: var(--main-font);
+    background-color: var(--vanilla);
+    color: var(--jet);
+    margin: 0px;
+}
+
+.logo {
+    max-width: 90px;
+    display: block;
+    /* margin: auto; */
+}
+
+.navigation {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation a {
+    color: var(--jet);
+    text-decoration: none;
+    padding: 20px 10px;
+    display: inline-block;
+}
+
+/* .navigation a:nth-child(2) {
+    color: red;
+} */
+.navigation a:hover {
+    background-color: var(--dodger-blue);
+}
+
+.banner {
+    /* 50vh = 50% window height */
+    min-height: 50vh;
+    background-image: url("sherwin-ker-_22vd1hfJhg-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color:var(--white);
+    /* X offset Y offset Blur Color */
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    letter-spacing: 20px;
+}
+
+.banner h1:hover {
+    filter: blur(5px);
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+#search-form input {
+    border: 1px solid #7d7d7d;
+    padding: 0.5em;
+    flex:1;
+}
+
+#search-form button {
+    border: 1px solid #7d7d7d;
+    padding: 0.5em;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.card-image {
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.front-carousel {
+    min-width: 100%;
+    min-height: 50vh;
+    background-color: var(--rose-pompadour);
+}
+.cell {
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+}
+.cell:nth-child(1) {
+    background-color: aquamarine;
+    background-image: url("carousel/markus-winkler-GcjCmhWslrM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    height: 80vh;
+    width: 100%;
+   
+}
+.cell:nth-child(2) {
+    background-color:blueviolet;
+    background-image: url("carousel/max-mota-N6BTNbaKZMo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4em;
+    height: 80vh;
+    width: 100%;
+    
+}
+.cell:nth-child(3) {
+    background-color:blueviolet;
+    background-image: url("carousel/douglas-lopez-liMmuoVgmt0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4em;
+    height: 80vh;
+    width: 100%;
+    
+}
+.cell:nth-child(4) {
+    background-color:blueviolet;
+    background-image: url("carousel/wu-yi-bdwbXwzI_Es-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4em;
+    height: 80vh;
+    width: 100%;
+    
+}
+.cell:nth-child(5) {
+    background-color:blueviolet;
+    background-image: url("carousel/caroline-attwood-bpPTlXWTOvg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4em;
+    height: 80vh;
+    width: 100%;
+}
+.menu {
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+}
+    .menu:nth-child(1) {
+        background-color:blueviolet;
+        background-image: url("carousel/choi-sungwoo-zZoanntnBWY-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 4em;
+        height: 80vh;
+        width: 100%;
+    }
+        .menu:nth-child(2) {
+            background-color:blueviolet;
+            background-image: url("carousel/anastasiia-rusaeva-DnBhidfyiH8-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-size: 4em;
+            height: 80vh;
+            width: 100%;
+        }
+            .menu:nth-child(3) {
+                background-color:blueviolet;
+                background-image: url("carousel/farhad-ibrahimzade-HNmcgpzPHag-unsplash.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: white;
+                font-size: 4em;
+                height: 80vh;
+                width: 100%;
+            }        
+
+
+    .nav-button {
+        font-size: 32px;
+        background-color: transparent;
+        align-self: center;
+        border: solid transparent;
+        color: var(--jet);
+        display: none;
+    
+}
